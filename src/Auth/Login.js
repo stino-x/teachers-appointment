@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { loginUser } from '../redux/reducers/LoginSlice';
 import styles from '../Styles/Login.module.css';
 
@@ -36,7 +36,6 @@ export default function Login() {
 
   return (
     <>
-      <Link className={styles['link-form']} to="/home">HOME</Link>
       <div className={styles.container}>
         <div className={styles.text}>
           LOG IN
